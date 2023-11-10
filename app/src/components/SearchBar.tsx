@@ -1,17 +1,19 @@
 interface Props {
 	userSearchInput: string
 	setUserSearchInput: React.Dispatch<React.SetStateAction<string>>
+	handleAddButton: (e: React.FormEvent) => void
 }
 
 export default function SearchBar({
 	userSearchInput,
 	setUserSearchInput,
+	handleAddButton,
 }: Props) {
-	console.log(userSearchInput)
 	return (
 		<form
 			action="#"
-			className="SearchBar__form">
+			className="SearchBar__form"
+			onSubmit={e => handleAddButton(e)}>
 			<input
 				className="SearchBar__input"
 				type="text"
