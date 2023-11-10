@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "poppins", sans-serif;
+	line-height: 1.5;
+}
+
+body {
+	background-color: #282a36;
+	color: #eee;
+}
+
+/* App component styling */
+.App {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.App__heading {
+	font-size: 2.5rem;
+	letter-spacing: 4px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/* SearchBar component styling */
+
+.SearchBar__form {
+	margin: 40px 0;
+}
+
+.SearchBar__input {
+	padding: 0.7rem 2rem;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	color: #eee;
+	border-top-left-radius: 0.3em;
+	border-bottom-left-radius: 0.3em;
+	font-family: inherit;
+}
+
+.SearchBar__input:focus,
+.SearchBar__btn:focus {
+	border: none;
+	outline: none;
+	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+		rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+		rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.SearchBar__btn {
+	padding: 0.7rem 1rem;
+	border: none;
+	cursor: pointer;
+	border-top-right-radius: 0.3em;
+	border-bottom-right-radius: 0.3em;
+	font-family: inherit;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+	.App__heading {
+		font-size: 1.5rem;
+		margin-top: 20px;
+	}
+}
