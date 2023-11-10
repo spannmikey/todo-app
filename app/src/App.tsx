@@ -4,7 +4,7 @@ import { Todo } from "./model"
 import SearchBar from "./components/SearchBar"
 import TodoList from "./components/TodoList"
 
-export default function App(): React.ReactNode {
+export default function App() {
 	const [userSearchInput, setUserSearchInput] = useState<string>("")
 	const [todoItems, setTodoItems] = useState<Todo[]>([])
 
