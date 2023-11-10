@@ -8,10 +8,15 @@ interface Props {
 
 export default function TodoList({ todoItems, setTodoItems }: Props) {
 	return (
-		<div className="TodoList__container">
+		<>
 			{todoItems.map(todoItem => (
-				<TodoItem key={todoItem.id} />
+				<TodoItem
+					key={todoItem.id}
+					todoItem={todoItem}
+					todoItems={todoItems}
+					setTodoItems={setTodoItems}
+				/>
 			))}
-		</div>
+		</>
 	)
 }

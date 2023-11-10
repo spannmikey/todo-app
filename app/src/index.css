@@ -14,6 +14,12 @@ body {
 	color: #eee;
 }
 
+/* utility classes */
+
+.strikethrough {
+	color: #282a36;
+}
+
 /* App component styling */
 .App {
 	height: 100vh;
@@ -65,12 +71,46 @@ body {
 	font-family: inherit;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	color: #282a36;
+	font-weight: 700;
+}
+
+/* Todo Item Styling */
+
+.TodoItem__form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 500px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 0.5em;
+	padding: 1rem;
+	margin-bottom: 20px;
+}
+
+.TodoItem__icons {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.TodoItem__icon {
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.TodoItem__icon:hover {
+	color: #282a36;
+	transform: scale(1.5);
 }
 
 /* Media queries */
-@media (max-width: 800px) {
+@media (max-width: 576px) {
 	.App__heading {
 		font-size: 1.5rem;
 		margin-top: 20px;
+	}
+
+	.TodoItem__form {
+		width: 400px;
 	}
 }
