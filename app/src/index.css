@@ -5,12 +5,12 @@
 }
 
 html {
+	background-color: #282a36;
 	font-family: "poppins", sans-serif;
 	line-height: 1.5;
 }
 
 body {
-	background-color: #282a36;
 	color: #eee;
 	min-height: 100vh;
 }
